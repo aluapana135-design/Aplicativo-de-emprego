@@ -14,18 +14,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Conecta com o arquivo XML
+        setContentView(R.layout.activity_main); 
 
-        // Encontra os campos e o botão no layout
+
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
 
-        // Adiciona um "ouvinte" ao botão para saber quando ele foi clicado
-        loginButton.setOnClickListener(new View.OnClickListener() {
+         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Pega o que foi digitado nos campos
+ 
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
